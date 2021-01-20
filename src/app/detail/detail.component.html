@@ -1,0 +1,43 @@
+<div class="container">  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <button type="button" class="btn btn-link" [routerLink]="['/']">Back</button>
+      Moive Details
+    </div>
+    <div class="panel-body details-container">
+      <form class="form">
+        <div class="form-group">
+          <label for="moiveName">Moive Name :   </label>
+          <label for="">
+            <p> {{ moiveDetails.title }}</p>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="moiveName">US Gross :   </label>
+          <label for="">
+            <p> {{ moiveDetails.us_gross }}</p>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="moiveName">Worldwide Gross :   </label>
+          <label for="">
+            <p> {{ moiveDetails.worldwide_gross }}</p>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="moiveName">Release Date :   </label>
+          <label for="">
+            <p> {{ moiveDetails.release_date }}</p>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="moiveName">Major Genre :   </label>
+          <label for="">
+            <p> {{ moiveDetails.major_genre }}</p>
+          </label>
+        </div>
+        <button type="button" class="btn btn-danger" (click)="deleteMoive(moiveDetails.title)">Delete Moive</button>
+      </form>
+    </div>
+  </div>
+</div>
